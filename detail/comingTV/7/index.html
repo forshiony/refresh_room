@@ -1,14 +1,34 @@
 <!doctype html>
-<html lang="ko" xml:lang="ko">
+<html lang="jp" xml:lang="jp">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="-1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="mobage: footer-color" content="none">
-	<link rel="stylesheet" href='/refresh_room/12008305/css/game/pex.css' media="all">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobage: footer-color" content="none">
+    	<link rel="stylesheet" href='/refresh_room/12008305/css/game/pex.css' media="all">
 	<script src='/refresh_room/12008305/js/jquery-2.2.2.min.js'></script>
 	<script src="/refresh_room/12008305/js/common_new.js"></script>
 	<script src="/refresh_room/12008305/js/require.js"></script>
@@ -19,45 +39,45 @@
 				easeljs_0_7_1: "/refresh_room/12008305/js/easeljs-0.7.1.min", //sprite를 읽기 위한 버전
 				tweenjs: "/refresh_room/12008305/js/tweenjs-0.6.2.min",
 				movieclipjs: "/refresh_room/12008305/js/movieclip-0.7.1.min",
-			}
-		})
-	</script>
-	<script src='/refresh_room/12008305/js/min/coming_tv.min.js'></script>
+}
+})
+</script>
+    	<script src='/refresh_room/12008305/js/min/coming_tv.min.js'></script>
 	<script src='/refresh_room/12008305/js/ilibrary.js'></script>
-	<title>아이돌마스터 신데렐라 걸즈</title>
-	<link rel="stylesheet" type="text/css" href="/refresh_room/12008305/css/rich/coming_tv.css" media="all">
+    <title> Idolmaster </title>
+   	<link rel="stylesheet" type="text/css" href="/refresh_room/12008305/css/rich/coming_tv.css" media="all">
 	<script type='text/javascript' src='/refresh_room/12008305/js/app_sound.js'></script>
 	<link rel="stylesheet" type="text/css" href="/refresh_room/12008305/css/base.css" />
 </head>
 
 <body>
-	<article id="coming_tv_detail">
-		<div class="cjs-container">
-			<div class="bg-container"></div>
-			<div class="effect-container">
-				<div id="animation-container" style="zoom:0.5;"></div>
-				<div class="balloon-container"></div>
-				<div class="story-container" style="text-align:left;">
-					<div class="comment-container">
-						<span></span><br>
-						<span></span><br>
-						<span></span><br>
-					</div>
-					<a href="#" class="btn-nextline showNextLine" style="display:none;"></a>
-				</div>
-			</div>
-			<div class="btn-nextscene" id="showAll"></div>
-			<div class="curtain-container"></div>
-			<div class="loading-container" id="jsEyeCatch">
-				<div style="margin-top:120px"><img src='/refresh_room/12008305/image_sp/petit_cg/ui/sprite/loading/working_1.gif' width="195" height="139"></div>
+    <article id="coming_tv_detail">
+        <div class="cjs-container">
+            <div class="bg-container"></div>
+            <div class="effect-container">
+                <div id="animation-container" style="zoom:0.5;"></div>
+                <div class="balloon-container"></div>
+                <div class="story-container" style="text-align:left;">
+                    <div class="comment-container">
+                        <span></span><br>
+                        <span></span><br>
+                        <span></span><br>
+                    </div>
+                    <a href="#" class="btn-nextline showNextLine" style="display:none;"></a>
+                </div>
+            </div>
+            <div class="btn-nextscene" id="showAll"></div>
+            <div class="curtain-container"></div>
+            <div class="loading-container" id="jsEyeCatch">
+             <div style="margin-top:120px"><img src='/refresh_room/12008305/image_sp/petit_cg/ui/sprite/loading/working_1.gif' width="195" height="139"></div>
 				<div style="margin-top:-80px"><img src='/refresh_room/12008305/image_sp/petit_cg/ui/sprite/loading/loading.gif' width="102" height="102"></div>
-			</div>
-		</div>
-	</article>
-	<script src='/refresh_room/12008305/js/petit_cg/cheek/cheek1.js'></script>
+            </div>
+        </div>
+    </article>
+    <script src='/refresh_room/12008305/js/petit_cg/cheek/cheek1.js'></script>
 	<script src='/refresh_room/12008305/js/petit_cg/cheek/cheek2.js'></script>
 	<script src='/refresh_room/12008305/js/petit_cg/cheek/cheek3.js'></script>
-	<script type="text/javascript">
+    <script type="text/javascript">
 		(function() {
 			var cjs_data = {
 				data: {
