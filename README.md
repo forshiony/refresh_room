@@ -1,4 +1,4 @@
-## [리프레시룸 메인](https://l4disk.github.io/refresh_room)
+## [리프레시룸 메인](https://forshiony.github.io/refresh_room)
 
 ## 리프레시룸 일람
 |번호|제목|번역|
